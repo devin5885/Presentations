@@ -6,8 +6,7 @@
 1. Open the repo in VS Code. (code .)
 1. Create & open three new files 'NoConflict1.txt', 'Conflict1.txt', 'Conflict2.txt'
 1. Add a single line to each file 'Code from main 1'.
-1. Save and commit the file and push the change to the remove repository.
-1. Open a new terminal in VS Code.
+1. Save and commit the file and push the change to the remote repository.
 1. Create a new branch 'feature1' and checkout the branch. (git checkout -b feature1)
 1. Edit the first line in the 'Conflict1.txt' file to 'Code from feature 1'
 1. Edit the first line in the 'Conflict2.txt' file to 'Code from feature 1'
@@ -23,7 +22,7 @@
 
 # Merge
 
-1. Merge the 'feature1' branch to the 'main' branch. (git merge feature1)
+1. Merge the 'feature1' branch to the 'main' branch. (git merge feature1) (Note: To see what conflicts are there w/o commiting use the --no-commit option).
 1. Under 'Merge files' Conflict1.txt and Conflict2 are listed. Open the files and resolve the conflicts. Notice that the code from main is listed as 'HEAD' and 'Current' change, code from feature1 is 'Incoming'. Resolve the conflict by keeping the code in main and then save the files.
 1. Stage Conflict2.txt and Conflict2.txt (git add .)
 1. Complete the merge (git commit).

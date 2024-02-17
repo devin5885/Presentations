@@ -16,15 +16,15 @@
 
 # Demo Setup
 
-1. If needed clone the repo 'Demo 2' from GitHub. The repository contains three files: NoConflict.txt, Conflict1.txt, and Conflict2.txt with conflicting changes in the 'main' and the first stash.
+1. If needed clone the repo 'Demo 2' from GitHub. The repository contains three files: NoConflict.txt, Conflict1.txt, and Conflict2.txt with conflicting uncommitted changes.
 1. Open VS code to the cloned repo and switch to the 'main' branch. (code ., git switch main)
 1. Switch to the 'feature1' branch (git switch 'feature1')
 1. Edit the first line in the 'Conflict1.txt' file to 'Code from feature 1'
 1. Edit the first line in the 'Conflict2.txt' file to 'Code from feature 1'
-1. Stash the changes.
 
 # Merge
 
+1. Stash the current changes (git stash -m 'feature1 Stash')
 1. Switch to the 'main' branch (git switch 'main')
 1. Merge the first stash into the 'main' branch. (git stash pop)
 1. Under 'Merge files' Conflict1.txt and Conflict2 are listed. Open the files and resolve the conflicts. Notice that the code from main is listed as 'HEAD' and 'Current' change, code from the stash is 'Incoming'. Resolve the conflict by keeping the code in main and then save the files.
